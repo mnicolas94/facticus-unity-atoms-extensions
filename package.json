@@ -1,20 +1,20 @@
 {
-  "name": "com.{{COMPANY}}.{{REPOSITORY_NAME}}",
+  "name": "com.facticus.unity-atoms-extensions",
   "version": "0.2.2",
-  "displayName": "{{FRIENDLY_NAME}}",
-  "description": "{{DESCRIPTION}}",
-  "unity": "{{UNITY_VERSION}}",
+  "displayName": "Unity Atoms Extensions",
+  "description": "Extensions, utility classes and functions for Unity Atoms package",
+  "unity": "2021.3",
   "unityRelease": "",
   "dependencies": {},
   "keywords": [],
   "author": {
-    "name": "{{COMPANY_FRIENDLY_NAME}}",
-    "email": "{{REPORT_EMAIL}}",
-    "url": "{{COMPANY_WEBSITE}}"
+    "name": "Facticus",
+    "email": "",
+    "url": ""
   },
   "repository": {
     "type": "git",
-    "url": "{{GIT_REPOSITORY}}"
+    "url": "https://github.com/mnicolas94/facticus-unity-atoms-extensions.git"
   },
   "license": "MIT"
 }
