@@ -1,8 +1,7 @@
-﻿using System;
-using UnityAtoms.BaseAtoms;
+﻿using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
-namespace Utility
+namespace UnityAtomsExtensions
 {
     public class CameraWidthVariableUpdater : MonoBehaviour
     {
