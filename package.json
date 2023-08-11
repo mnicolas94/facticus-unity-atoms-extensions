@@ -5,7 +5,10 @@
   "description": "Extensions, utility classes and functions for Unity Atoms package",
   "unity": "2021.3",
   "unityRelease": "",
-  "dependencies": {},
+  "dependencies": {
+    "com.unity-atoms.unity-atoms-core": "4.4.8",
+    "com.unity.textmeshpro": "3.0.6"
+  },
   "keywords": [],
   "author": {
     "name": "Facticus",
