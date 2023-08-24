@@ -9,5 +9,5 @@ namespace UnityAtomsExtensions.Editor.CustomEditors
     /// Variable Inspector of type `float`. Inherits from `AtomVariableEditor`
     /// </summary>
     [CustomEditor(typeof(FloatStatistic))]
-    public sealed class FloatStatisticEditor : AtomVariableEditor<float, FloatPair> { }
+    public sealed class FloatStatisticEditor : AtomVariableEditorExtended<float, FloatPair> { }
 }
