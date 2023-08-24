@@ -2,7 +2,7 @@
 using UnityAtoms;
 using UnityAtoms.BaseAtoms;
 
-namespace AtomsExtensions
+namespace UnityAtomsExtensions.StatisticsVariables
 {
     [Serializable]
     public class FloatStatisticReference : EquatableAtomReference<

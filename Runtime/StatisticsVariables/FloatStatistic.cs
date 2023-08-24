@@ -3,7 +3,7 @@ using UnityAtoms;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
-namespace AtomsExtensions
+namespace UnityAtomsExtensions.StatisticsVariables
 {
     [CreateAssetMenu(menuName = "Unity Atoms/Variables/FloatStatistic", fileName = "FloatStatistic")]
     public class FloatStatistic : EquatableAtomVariable<float, FloatPair, FloatEvent, FloatPairEvent, FloatFloatFunction>

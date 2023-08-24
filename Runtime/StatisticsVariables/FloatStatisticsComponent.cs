@@ -1,7 +1,7 @@
 ﻿using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
-namespace AtomsExtensions
+namespace UnityAtomsExtensions.StatisticsVariables
 {
     public class FloatStatisticsComponent : MonoBehaviour
     {

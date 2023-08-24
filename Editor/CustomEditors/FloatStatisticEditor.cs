@@ -1,6 +1,6 @@
-﻿using AtomsExtensions;
-using UnityAtoms.BaseAtoms;
+﻿using UnityAtoms.BaseAtoms;
 using UnityAtoms.Editor;
+using UnityAtomsExtensions.StatisticsVariables;
 using UnityEditor;
 
 namespace UnityAtomsExtensions.Editor.CustomEditors
