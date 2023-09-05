@@ -8,9 +8,17 @@ namespace UnityAtomsExtensions
     {
         [SerializeField] private GameObjectVariable _variable;
 
-        private void Awake()
+        private void OnEnable()
         {
             _variable.Value = gameObject;
+        }
+
+        private void OnDisable()
+        {
+            if (_variable.Value == gameObject)
+            {
+                _variable.Value = null;
+            }
         }
     }
 }
