@@ -5,7 +5,6 @@ using UnityEngine;
 namespace UnityAtomsExtensions
 {
     public class ObjectListAppender<T, TL, TE> : MonoBehaviour
-        where T : Object
         where TL : AtomValueList<T, TE>
         where TE : AtomEvent<T>
     {
