@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace UnityAtomsExtensions.NoName
+namespace UnityAtomsExtensions.PrioritizedValues
 {
     public abstract class PrioritizedValue<T> : ScriptableObject
     {
