@@ -5,7 +5,7 @@ namespace UnityAtomsExtensions.PrioritizedValues
 {
     public abstract class PrioritizedValue<T> : ScriptableObject
     {
-        [SerializeField] private List<T> _list;
+        [SerializeField] private List<T> _list = new List<T>();
         [SerializeField] private bool _returnOldest;
 
         public bool HasValue()
