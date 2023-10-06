@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace UnityAtomsExtensions
 {
-    public class GameObjectListPopulator : ObjectListAppender<GameObject, GameObjectValueList, GameObjectEvent>
+    public class GameObjectListPopulator : ObjectListPopulator<GameObject, GameObjectValueList, GameObjectEvent>
     {
         
     }
