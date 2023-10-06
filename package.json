@@ -1,6 +1,6 @@
 {
   "name": "com.facticus.unity-atoms-extensions",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "displayName": "Unity Atoms Extensions",
   "description": "Extensions, utility classes and functions for Unity Atoms package",
   "unity": "2021.3",
