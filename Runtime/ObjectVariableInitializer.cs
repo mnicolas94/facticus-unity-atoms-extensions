@@ -11,6 +11,7 @@ namespace UnityAtomsExtensions
     {
         [SerializeField] private T _value;
         [SerializeField] private TV _variable;
+        [SerializeField] private bool _setNullOnDisable = true;
 
         private void OnEnable()
         {
@@ -19,7 +20,7 @@ namespace UnityAtomsExtensions
 
         private void OnDisable()
         {
-            if (_variable.Value == _value)
+            if (_setNullOnDisable && _variable.Value == _value)
             {
                 _variable.Value = null;
             }

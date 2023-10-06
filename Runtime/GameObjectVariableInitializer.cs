@@ -7,6 +7,7 @@ namespace UnityAtomsExtensions
     public class GameObjectVariableInitializer : MonoBehaviour
     {
         [SerializeField] private GameObjectVariable _variable;
+        [SerializeField] private bool _setNullOnDisable = true;
 
         private void OnEnable()
         {
@@ -15,7 +16,7 @@ namespace UnityAtomsExtensions
 
         private void OnDisable()
         {
-            if (_variable.Value == gameObject)
+            if (_setNullOnDisable && _variable.Value == gameObject)
             {
                 _variable.Value = null;
             }
