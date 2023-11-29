@@ -13,7 +13,7 @@ namespace UnityAtoms.BaseAtoms
     {
         protected override bool ValueEquals(UnityAtomsExtensions.PrioritizedValues.ResourceMediatorBool other)
         {
-            throw new NotImplementedException();
+            return other == _value;
         }
     }
 }
