@@ -16,5 +16,11 @@ namespace UnityAtoms.BaseAtoms
         ResourceMediatorStringEvent,
         ResourceMediatorStringPairEvent,
         ResourceMediatorStringResourceMediatorStringFunction>
-    { }
+    {
+        protected override void ImplSpecificSetup()
+        {
+            base.ImplSpecificSetup();
+            _inMemoryCopy.Value ??= new ResourceMediatorString();
+        }
+    }
 }

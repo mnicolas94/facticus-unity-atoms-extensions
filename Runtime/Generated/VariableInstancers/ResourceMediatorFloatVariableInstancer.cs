@@ -16,5 +16,11 @@ namespace UnityAtoms.BaseAtoms
         ResourceMediatorFloatEvent,
         ResourceMediatorFloatPairEvent,
         ResourceMediatorFloatResourceMediatorFloatFunction>
-    { }
+    {
+        protected override void ImplSpecificSetup()
+        {
+            base.ImplSpecificSetup();
+            _inMemoryCopy.Value ??= new ResourceMediatorFloat();
+        }
+    }
 }
