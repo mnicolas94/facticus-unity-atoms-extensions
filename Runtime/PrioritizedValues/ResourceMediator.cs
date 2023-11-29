@@ -68,4 +68,7 @@ namespace UnityAtomsExtensions.PrioritizedValues
 
     [Serializable]
     public class ResourceMediatorTransform : ResourceMediator<Transform> {}
+    
+    [Serializable]
+    public class ResourceMediatorComponent : ResourceMediator<Component> {}
 }
