@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityAtomsExtensions.PrioritizedValues;
 
 namespace UnityAtoms.BaseAtoms
 {

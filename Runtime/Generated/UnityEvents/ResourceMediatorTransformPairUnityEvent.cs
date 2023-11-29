@@ -1,6 +1,5 @@
 using System;
 using UnityEngine.Events;
-using UnityAtomsExtensions.PrioritizedValues;
 
 namespace UnityAtoms.BaseAtoms
 {

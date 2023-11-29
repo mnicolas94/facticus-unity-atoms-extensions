@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityAtoms.BaseAtoms;
-using UnityAtomsExtensions.PrioritizedValues;
+using UnityAtomsExtensions.ResourceMediator;
 
 namespace UnityAtoms.BaseAtoms
 {
@@ -12,7 +12,7 @@ namespace UnityAtoms.BaseAtoms
     public class ResourceMediatorComponentVariableInstancer : AtomVariableInstancer<
         ResourceMediatorComponentVariable,
         ResourceMediatorComponentPair,
-        UnityAtomsExtensions.PrioritizedValues.ResourceMediatorComponent,
+        ResourceMediatorComponent,
         ResourceMediatorComponentEvent,
         ResourceMediatorComponentPairEvent,
         ResourceMediatorComponentResourceMediatorComponentFunction>

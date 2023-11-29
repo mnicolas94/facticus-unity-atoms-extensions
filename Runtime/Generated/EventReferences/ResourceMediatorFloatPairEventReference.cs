@@ -1,5 +1,4 @@
 using System;
-using UnityAtomsExtensions.PrioritizedValues;
 
 namespace UnityAtoms.BaseAtoms
 {

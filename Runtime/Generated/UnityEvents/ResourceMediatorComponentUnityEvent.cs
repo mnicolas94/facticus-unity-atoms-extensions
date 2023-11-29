@@ -1,6 +1,6 @@
 using System;
+using UnityAtomsExtensions.ResourceMediator;
 using UnityEngine.Events;
-using UnityAtomsExtensions.PrioritizedValues;
 
 namespace UnityAtoms.BaseAtoms
 {
@@ -8,5 +8,5 @@ namespace UnityAtoms.BaseAtoms
     /// None generic Unity Event of type `UnityAtomsExtensions.PrioritizedValues.ResourceMediatorComponent`. Inherits from `UnityEvent&lt;UnityAtomsExtensions.PrioritizedValues.ResourceMediatorComponent&gt;`.
     /// </summary>
     [Serializable]
-    public sealed class ResourceMediatorComponentUnityEvent : UnityEvent<UnityAtomsExtensions.PrioritizedValues.ResourceMediatorComponent> { }
+    public sealed class ResourceMediatorComponentUnityEvent : UnityEvent<ResourceMediatorComponent> { }
 }

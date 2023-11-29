@@ -1,22 +1,23 @@
 using System;
+using UnityAtomsExtensions.ResourceMediator;
 using UnityEngine;
-using UnityAtomsExtensions.PrioritizedValues;
+
 namespace UnityAtoms.BaseAtoms
 {
     /// <summary>
     /// IPair of type `&lt;UnityAtomsExtensions.PrioritizedValues.ResourceMediatorComponent&gt;`. Inherits from `IPair&lt;UnityAtomsExtensions.PrioritizedValues.ResourceMediatorComponent&gt;`.
     /// </summary>
     [Serializable]
-    public struct ResourceMediatorComponentPair : IPair<UnityAtomsExtensions.PrioritizedValues.ResourceMediatorComponent>
+    public struct ResourceMediatorComponentPair : IPair<ResourceMediatorComponent>
     {
-        public UnityAtomsExtensions.PrioritizedValues.ResourceMediatorComponent Item1 { get => _item1; set => _item1 = value; }
-        public UnityAtomsExtensions.PrioritizedValues.ResourceMediatorComponent Item2 { get => _item2; set => _item2 = value; }
+        public ResourceMediatorComponent Item1 { get => _item1; set => _item1 = value; }
+        public ResourceMediatorComponent Item2 { get => _item2; set => _item2 = value; }
 
         [SerializeField]
-        private UnityAtomsExtensions.PrioritizedValues.ResourceMediatorComponent _item1;
+        private ResourceMediatorComponent _item1;
         [SerializeField]
-        private UnityAtomsExtensions.PrioritizedValues.ResourceMediatorComponent _item2;
+        private ResourceMediatorComponent _item2;
 
-        public void Deconstruct(out UnityAtomsExtensions.PrioritizedValues.ResourceMediatorComponent item1, out UnityAtomsExtensions.PrioritizedValues.ResourceMediatorComponent item2) { item1 = Item1; item2 = Item2; }
+        public void Deconstruct(out ResourceMediatorComponent item1, out ResourceMediatorComponent item2) { item1 = Item1; item2 = Item2; }
     }
 }

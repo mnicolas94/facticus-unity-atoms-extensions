@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEngine.UIElements;
 using UnityAtoms.Editor;
-using UnityAtomsExtensions.PrioritizedValues;
+using UnityAtomsExtensions.ResourceMediator;
 
 namespace UnityAtoms.BaseAtoms.Editor
 {
@@ -10,6 +10,6 @@ namespace UnityAtoms.BaseAtoms.Editor
     /// Event property drawer of type `UnityAtomsExtensions.PrioritizedValues.ResourceMediatorBool`. Inherits from `AtomEventEditor&lt;UnityAtomsExtensions.PrioritizedValues.ResourceMediatorBool, ResourceMediatorBoolEvent&gt;`. Only availble in `UNITY_2019_1_OR_NEWER`.
     /// </summary>
     [CustomEditor(typeof(ResourceMediatorBoolEvent))]
-    public sealed class ResourceMediatorBoolEventEditor : AtomEventEditor<UnityAtomsExtensions.PrioritizedValues.ResourceMediatorBool, ResourceMediatorBoolEvent> { }
+    public sealed class ResourceMediatorBoolEventEditor : AtomEventEditor<ResourceMediatorBool, ResourceMediatorBoolEvent> { }
 }
 #endif

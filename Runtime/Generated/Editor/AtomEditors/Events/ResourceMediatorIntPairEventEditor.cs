@@ -2,7 +2,6 @@
 using UnityEditor;
 using UnityEngine.UIElements;
 using UnityAtoms.Editor;
-using UnityAtomsExtensions.PrioritizedValues;
 
 namespace UnityAtoms.BaseAtoms.Editor
 {

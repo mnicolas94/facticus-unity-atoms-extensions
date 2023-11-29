@@ -1,6 +1,6 @@
 using UnityEditor;
 using UnityAtoms.Editor;
-using UnityAtomsExtensions.PrioritizedValues;
+using UnityAtomsExtensions.ResourceMediator;
 
 namespace UnityAtoms.BaseAtoms.Editor
 {
@@ -8,5 +8,5 @@ namespace UnityAtoms.BaseAtoms.Editor
     /// Variable Inspector of type `UnityAtomsExtensions.PrioritizedValues.ResourceMediatorComponent`. Inherits from `AtomVariableEditor`
     /// </summary>
     [CustomEditor(typeof(ResourceMediatorComponentVariable))]
-    public sealed class ResourceMediatorComponentVariableEditor : AtomVariableEditor<UnityAtomsExtensions.PrioritizedValues.ResourceMediatorComponent, ResourceMediatorComponentPair> { }
+    public sealed class ResourceMediatorComponentVariableEditor : AtomVariableEditor<ResourceMediatorComponent, ResourceMediatorComponentPair> { }
 }

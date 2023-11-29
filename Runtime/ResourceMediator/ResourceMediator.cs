@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace UnityAtomsExtensions.PrioritizedValues
+namespace UnityAtomsExtensions.ResourceMediator
 {
     public enum MediationOrder
     {

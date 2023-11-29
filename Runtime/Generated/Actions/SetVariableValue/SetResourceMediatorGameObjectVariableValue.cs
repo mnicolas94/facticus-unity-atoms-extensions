@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityAtoms.BaseAtoms;
-using UnityAtomsExtensions.PrioritizedValues;
+using UnityAtomsExtensions.ResourceMediator;
 
 namespace UnityAtoms.BaseAtoms
 {
@@ -10,7 +10,7 @@ namespace UnityAtoms.BaseAtoms
     [EditorIcon("atom-icon-purple")]
     [CreateAssetMenu(menuName = "Unity Atoms/Actions/Set Variable Value/ResourceMediatorGameObject", fileName = "SetResourceMediatorGameObjectVariableValue")]
     public sealed class SetResourceMediatorGameObjectVariableValue : SetVariableValue<
-        UnityAtomsExtensions.PrioritizedValues.ResourceMediatorGameObject,
+        ResourceMediatorGameObject,
         ResourceMediatorGameObjectPair,
         ResourceMediatorGameObjectVariable,
         ResourceMediatorGameObjectConstant,

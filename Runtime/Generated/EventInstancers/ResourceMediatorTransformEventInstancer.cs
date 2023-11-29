@@ -1,5 +1,5 @@
+using UnityAtomsExtensions.ResourceMediator;
 using UnityEngine;
-using UnityAtomsExtensions.PrioritizedValues;
 
 namespace UnityAtoms.BaseAtoms
 {
@@ -8,5 +8,5 @@ namespace UnityAtoms.BaseAtoms
     /// </summary>
     [EditorIcon("atom-icon-sign-blue")]
     [AddComponentMenu("Unity Atoms/Event Instancers/ResourceMediatorTransform Event Instancer")]
-    public class ResourceMediatorTransformEventInstancer : AtomEventInstancer<UnityAtomsExtensions.PrioritizedValues.ResourceMediatorTransform, ResourceMediatorTransformEvent> { }
+    public class ResourceMediatorTransformEventInstancer : AtomEventInstancer<ResourceMediatorTransform, ResourceMediatorTransformEvent> { }
 }

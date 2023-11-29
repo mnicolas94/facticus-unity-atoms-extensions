@@ -1,5 +1,5 @@
 using System;
-using UnityAtomsExtensions.PrioritizedValues;
+using UnityAtomsExtensions.ResourceMediator;
 
 namespace UnityAtoms.BaseAtoms
 {
@@ -8,7 +8,7 @@ namespace UnityAtoms.BaseAtoms
     /// </summary>
     [Serializable]
     public sealed class ResourceMediatorBoolEventReference : AtomEventReference<
-        UnityAtomsExtensions.PrioritizedValues.ResourceMediatorBool,
+        ResourceMediatorBool,
         ResourceMediatorBoolVariable,
         ResourceMediatorBoolEvent,
         ResourceMediatorBoolVariableInstancer,

@@ -1,5 +1,5 @@
+using UnityAtomsExtensions.ResourceMediator;
 using UnityEngine;
-using UnityAtomsExtensions.PrioritizedValues;
 
 namespace UnityAtoms.BaseAtoms
 {
@@ -8,5 +8,5 @@ namespace UnityAtoms.BaseAtoms
     /// </summary>
     [EditorIcon("atom-icon-piglet")]
     [CreateAssetMenu(menuName = "Unity Atoms/Value Lists/ResourceMediatorComponent", fileName = "ResourceMediatorComponentValueList")]
-    public sealed class ResourceMediatorComponentValueList : AtomValueList<UnityAtomsExtensions.PrioritizedValues.ResourceMediatorComponent, ResourceMediatorComponentEvent> { }
+    public sealed class ResourceMediatorComponentValueList : AtomValueList<ResourceMediatorComponent, ResourceMediatorComponentEvent> { }
 }

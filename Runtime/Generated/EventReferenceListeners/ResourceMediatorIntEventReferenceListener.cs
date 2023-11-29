@@ -1,5 +1,5 @@
+using UnityAtomsExtensions.ResourceMediator;
 using UnityEngine;
-using UnityAtomsExtensions.PrioritizedValues;
 
 namespace UnityAtoms.BaseAtoms
 {
@@ -9,7 +9,7 @@ namespace UnityAtoms.BaseAtoms
     [EditorIcon("atom-icon-orange")]
     [AddComponentMenu("Unity Atoms/Listeners/ResourceMediatorInt Event Reference Listener")]
     public sealed class ResourceMediatorIntEventReferenceListener : AtomEventReferenceListener<
-        UnityAtomsExtensions.PrioritizedValues.ResourceMediatorInt,
+        ResourceMediatorInt,
         ResourceMediatorIntEvent,
         ResourceMediatorIntEventReference,
         ResourceMediatorIntUnityEvent>

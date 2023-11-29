@@ -1,5 +1,5 @@
+using UnityAtomsExtensions.ResourceMediator;
 using UnityEngine;
-using UnityAtomsExtensions.PrioritizedValues;
 
 namespace UnityAtoms.BaseAtoms
 {
@@ -8,5 +8,5 @@ namespace UnityAtoms.BaseAtoms
     /// </summary>
     [EditorIcon("atom-icon-teal")]
     [CreateAssetMenu(menuName = "Unity Atoms/Constants/ResourceMediatorGameObject", fileName = "ResourceMediatorGameObjectConstant")]
-    public sealed class ResourceMediatorGameObjectConstant : AtomBaseVariable<UnityAtomsExtensions.PrioritizedValues.ResourceMediatorGameObject> { }
+    public sealed class ResourceMediatorGameObjectConstant : AtomBaseVariable<ResourceMediatorGameObject> { }
 }

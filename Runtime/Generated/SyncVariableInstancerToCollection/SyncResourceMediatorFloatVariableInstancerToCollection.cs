@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityAtoms.BaseAtoms;
-using UnityAtomsExtensions.PrioritizedValues;
+using UnityAtomsExtensions.ResourceMediator;
 
 namespace UnityAtoms.BaseAtoms
 {
@@ -9,5 +9,5 @@ namespace UnityAtoms.BaseAtoms
     /// </summary>
     [AddComponentMenu("Unity Atoms/Sync Variable Instancer to Collection/Sync ResourceMediatorFloat Variable Instancer to Collection")]
     [EditorIcon("atom-icon-delicate")]
-    public class SyncResourceMediatorFloatVariableInstancerToCollection : SyncVariableInstancerToCollection<UnityAtomsExtensions.PrioritizedValues.ResourceMediatorFloat, ResourceMediatorFloatVariable, ResourceMediatorFloatVariableInstancer> { }
+    public class SyncResourceMediatorFloatVariableInstancerToCollection : SyncVariableInstancerToCollection<ResourceMediatorFloat, ResourceMediatorFloatVariable, ResourceMediatorFloatVariableInstancer> { }
 }

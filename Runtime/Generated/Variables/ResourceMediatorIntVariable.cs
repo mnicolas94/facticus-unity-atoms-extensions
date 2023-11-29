@@ -1,6 +1,6 @@
 using UnityEngine;
 using System;
-using UnityAtomsExtensions.PrioritizedValues;
+using UnityAtomsExtensions.ResourceMediator;
 
 namespace UnityAtoms.BaseAtoms
 {
@@ -9,9 +9,9 @@ namespace UnityAtoms.BaseAtoms
     /// </summary>
     [EditorIcon("atom-icon-lush")]
     [CreateAssetMenu(menuName = "Unity Atoms/Variables/ResourceMediatorInt", fileName = "ResourceMediatorIntVariable")]
-    public sealed class ResourceMediatorIntVariable : AtomVariable<UnityAtomsExtensions.PrioritizedValues.ResourceMediatorInt, ResourceMediatorIntPair, ResourceMediatorIntEvent, ResourceMediatorIntPairEvent, ResourceMediatorIntResourceMediatorIntFunction>
+    public sealed class ResourceMediatorIntVariable : AtomVariable<ResourceMediatorInt, ResourceMediatorIntPair, ResourceMediatorIntEvent, ResourceMediatorIntPairEvent, ResourceMediatorIntResourceMediatorIntFunction>
     {
-        protected override bool ValueEquals(UnityAtomsExtensions.PrioritizedValues.ResourceMediatorInt other)
+        protected override bool ValueEquals(ResourceMediatorInt other)
         {
             return other == _value;
         }

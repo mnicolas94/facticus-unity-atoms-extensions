@@ -1,5 +1,5 @@
+using UnityAtomsExtensions.ResourceMediator;
 using UnityEngine;
-using UnityAtomsExtensions.PrioritizedValues;
 
 namespace UnityAtoms.BaseAtoms
 {
@@ -8,5 +8,5 @@ namespace UnityAtoms.BaseAtoms
     /// </summary>
     [EditorIcon("atom-icon-piglet")]
     [CreateAssetMenu(menuName = "Unity Atoms/Value Lists/ResourceMediatorTransform", fileName = "ResourceMediatorTransformValueList")]
-    public sealed class ResourceMediatorTransformValueList : AtomValueList<UnityAtomsExtensions.PrioritizedValues.ResourceMediatorTransform, ResourceMediatorTransformEvent> { }
+    public sealed class ResourceMediatorTransformValueList : AtomValueList<ResourceMediatorTransform, ResourceMediatorTransformEvent> { }
 }

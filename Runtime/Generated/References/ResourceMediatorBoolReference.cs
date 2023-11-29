@@ -1,6 +1,6 @@
 using System;
 using UnityAtoms.BaseAtoms;
-using UnityAtomsExtensions.PrioritizedValues;
+using UnityAtomsExtensions.ResourceMediator;
 
 namespace UnityAtoms.BaseAtoms
 {
@@ -9,7 +9,7 @@ namespace UnityAtoms.BaseAtoms
     /// </summary>
     [Serializable]
     public sealed class ResourceMediatorBoolReference : AtomReference<
-        UnityAtomsExtensions.PrioritizedValues.ResourceMediatorBool,
+        ResourceMediatorBool,
         ResourceMediatorBoolPair,
         ResourceMediatorBoolConstant,
         ResourceMediatorBoolVariable,
@@ -19,9 +19,9 @@ namespace UnityAtoms.BaseAtoms
         ResourceMediatorBoolVariableInstancer>, IEquatable<ResourceMediatorBoolReference>
     {
         public ResourceMediatorBoolReference() : base() { }
-        public ResourceMediatorBoolReference(UnityAtomsExtensions.PrioritizedValues.ResourceMediatorBool value) : base(value) { }
+        public ResourceMediatorBoolReference(ResourceMediatorBool value) : base(value) { }
         public bool Equals(ResourceMediatorBoolReference other) { return base.Equals(other); }
-        protected override bool ValueEquals(UnityAtomsExtensions.PrioritizedValues.ResourceMediatorBool other)
+        protected override bool ValueEquals(ResourceMediatorBool other)
         {
             throw new NotImplementedException();
         }

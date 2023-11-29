@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityAtoms.BaseAtoms;
-using UnityAtomsExtensions.PrioritizedValues;
+using UnityAtomsExtensions.ResourceMediator;
 
 namespace UnityAtoms.BaseAtoms
 {
@@ -10,7 +10,7 @@ namespace UnityAtoms.BaseAtoms
     [EditorIcon("atom-icon-purple")]
     [CreateAssetMenu(menuName = "Unity Atoms/Actions/Set Variable Value/ResourceMediatorBool", fileName = "SetResourceMediatorBoolVariableValue")]
     public sealed class SetResourceMediatorBoolVariableValue : SetVariableValue<
-        UnityAtomsExtensions.PrioritizedValues.ResourceMediatorBool,
+        ResourceMediatorBool,
         ResourceMediatorBoolPair,
         ResourceMediatorBoolVariable,
         ResourceMediatorBoolConstant,

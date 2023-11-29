@@ -1,5 +1,5 @@
+using UnityAtomsExtensions.ResourceMediator;
 using UnityEngine;
-using UnityAtomsExtensions.PrioritizedValues;
 
 namespace UnityAtoms.BaseAtoms
 {
@@ -8,5 +8,5 @@ namespace UnityAtoms.BaseAtoms
     /// </summary>
     [EditorIcon("atom-icon-teal")]
     [CreateAssetMenu(menuName = "Unity Atoms/Constants/ResourceMediatorTransform", fileName = "ResourceMediatorTransformConstant")]
-    public sealed class ResourceMediatorTransformConstant : AtomBaseVariable<UnityAtomsExtensions.PrioritizedValues.ResourceMediatorTransform> { }
+    public sealed class ResourceMediatorTransformConstant : AtomBaseVariable<ResourceMediatorTransform> { }
 }
