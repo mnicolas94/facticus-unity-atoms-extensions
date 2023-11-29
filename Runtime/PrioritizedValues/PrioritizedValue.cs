@@ -5,39 +5,31 @@ namespace UnityAtomsExtensions.PrioritizedValues
 {
     public abstract class PrioritizedValue<T> : ScriptableObject
     {
-        [SerializeField] private List<T> _list = new List<T>();
-        [SerializeField] private bool _returnOldest;
+        [SerializeField] private ResourceMediator<T> _mediator;
 
         public bool HasValue()
         {
-            return _list.Count > 0;
+            return _mediator.HasValue();
         }
 
         public T GetCurrentValue()
         {
-            if (_returnOldest)
-            {
-                return _list[0];
-            }
-            else
-            {
-                return _list[_list.Count - 1];
-            }
+            return _mediator.GetCurrentValue();
         }
 
         public void SetValue(T value)
         {
-            _list.Add(value);
+            _mediator.SetValue(value);
         }
         
         public void RemoveValue(T value)
         {
-            _list.Remove(value);
+            _mediator.RemoveValue(value);
         }
 
         public void Clear()
         {
-            _list.Clear();
+            _mediator.Clear();
         }
     }
 }
