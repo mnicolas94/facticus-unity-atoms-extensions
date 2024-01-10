@@ -11,6 +11,16 @@ namespace UnityAtomsExtensions.StatisticsVariables
         [SerializeField] private List<FloatReference> _addBuffs = new List<FloatReference>();
         [SerializeField] private List<FloatReference> _scaleBuffs = new List<FloatReference>();
 
+        public bool HasAddBuff(FloatReference buff)
+        {
+            return _addBuffs.Contains(buff);
+        }
+        
+        public bool HasScaleBuff(FloatReference buff)
+        {
+            return _scaleBuffs.Contains(buff);
+        }
+        
         public void AddAddBuff(FloatReference buff)
         {
             _addBuffs.Add(buff);

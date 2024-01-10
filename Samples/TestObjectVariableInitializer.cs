@@ -1,4 +1,5 @@
 ﻿using UnityAtoms.BaseAtoms;
+using UnityAtomsExtensions.Initializers;
 
 namespace UnityAtomsExtensions.Samples
 {

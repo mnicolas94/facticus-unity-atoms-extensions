@@ -1,8 +1,10 @@
 ﻿using UnityAtoms;
 using UnityEngine;
+using UnityEngine.Scripting.APIUpdating;
 
-namespace UnityAtomsExtensions
+namespace UnityAtomsExtensions.Initializers
 {
+    [MovedFrom(true, "UnityAtomsExtensions")]
     public class ObjectReferenceInitializer<T, TV, P, C, V, E1, E2, F, VI> : MonoBehaviour
         where T : Object
         where TV : AtomReference<T, P, C, V, E1, E2, F, VI>

@@ -1,9 +1,10 @@
-﻿using System;
-using UnityAtoms.BaseAtoms;
+﻿using UnityAtoms.BaseAtoms;
 using UnityEngine;
+using UnityEngine.Scripting.APIUpdating;
 
-namespace UnityAtomsExtensions
+namespace UnityAtomsExtensions.Initializers
 {
+    [MovedFrom(true, "UnityAtomsExtensions")]
     public class GameObjectVariableInitializer : MonoBehaviour
     {
         [SerializeField] private GameObject _target;

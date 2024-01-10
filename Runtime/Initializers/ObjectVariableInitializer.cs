@@ -1,10 +1,11 @@
-﻿using System;
-using UnityAtoms;
+﻿using UnityAtoms;
 using UnityEngine;
+using UnityEngine.Scripting.APIUpdating;
 using Object = UnityEngine.Object;
 
-namespace UnityAtomsExtensions
+namespace UnityAtomsExtensions.Initializers
 {
+    [MovedFrom(true, "UnityAtomsExtensions")]
     public abstract class ObjectVariableInitializer<T, TV> : MonoBehaviour
         where T : Object
         where TV : AtomBaseVariable<T>
