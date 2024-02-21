@@ -9,7 +9,7 @@ namespace UnityAtoms.BaseAtoms
     /// </summary>
     [EditorIcon("atom-icon-lush")]
     [CreateAssetMenu(menuName = "Unity Atoms/Variables/ResourceMediatorFloat", fileName = "ResourceMediatorFloatVariable")]
-    public sealed class ResourceMediatorFloatVariable : AtomVariable<ResourceMediatorFloat, ResourceMediatorFloatPair, ResourceMediatorFloatEvent, ResourceMediatorFloatPairEvent, ResourceMediatorFloatResourceMediatorFloatFunction>
+    public sealed partial class ResourceMediatorFloatVariable : AtomVariable<ResourceMediatorFloat, ResourceMediatorFloatPair, ResourceMediatorFloatEvent, ResourceMediatorFloatPairEvent, ResourceMediatorFloatResourceMediatorFloatFunction>
     {
         protected override bool ValueEquals(ResourceMediatorFloat other)
         {

@@ -8,5 +8,14 @@ namespace UnityAtoms.BaseAtoms.Editor
     /// Variable Inspector of type `UnityAtomsExtensions.PrioritizedValues.ResourceMediatorString`. Inherits from `AtomVariableEditor`
     /// </summary>
     [CustomEditor(typeof(ResourceMediatorStringVariable))]
-    public sealed class ResourceMediatorStringVariableEditor : AtomVariableEditor<ResourceMediatorString, ResourceMediatorStringPair> { }
+    public sealed class
+        ResourceMediatorStringVariableEditor : AtomVariableEditor<ResourceMediatorString, ResourceMediatorStringPair>
+    {
+        public override void OnInspectorGUI()
+        {
+            base.OnInspectorGUI();
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("_clearOnEnable"));
+            serializedObject.ApplyModifiedProperties();
+        }
+    }
 }

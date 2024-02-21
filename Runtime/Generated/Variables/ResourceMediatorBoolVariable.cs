@@ -9,7 +9,7 @@ namespace UnityAtoms.BaseAtoms
     /// </summary>
     [EditorIcon("atom-icon-lush")]
     [CreateAssetMenu(menuName = "Unity Atoms/Variables/ResourceMediatorBool", fileName = "ResourceMediatorBoolVariable")]
-    public sealed class ResourceMediatorBoolVariable : AtomVariable<ResourceMediatorBool, ResourceMediatorBoolPair, ResourceMediatorBoolEvent, ResourceMediatorBoolPairEvent, ResourceMediatorBoolResourceMediatorBoolFunction>
+    public sealed partial class ResourceMediatorBoolVariable : AtomVariable<ResourceMediatorBool, ResourceMediatorBoolPair, ResourceMediatorBoolEvent, ResourceMediatorBoolPairEvent, ResourceMediatorBoolResourceMediatorBoolFunction>
     {
         protected override bool ValueEquals(ResourceMediatorBool other)
         {

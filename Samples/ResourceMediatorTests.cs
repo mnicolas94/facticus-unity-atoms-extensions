@@ -22,5 +22,11 @@ namespace UnityAtomsExtensions.Samples
         
         [SerializeField] private ResourceMediatorTransformVariable _transformVariable;
         [SerializeField] private ResourceMediatorTransformReference _transformReference;
+
+        [ContextMenu(nameof(Test))]
+        private void Test()
+        {
+            _stringVariable.Value.SetValue("qwe");
+        }
     }
 }
