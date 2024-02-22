@@ -15,18 +15,23 @@ MonoBehaviour:
   _developerDescription: 
   _id: 
   _value:
-    _list: []
-    _order: 0
+    _list:
+    - 
+    - 
+    _order: 1
   _changed: {fileID: 0}
   _changedWithHistory: {fileID: 0}
   _triggerChangedOnOnEnable: 0
   _triggerChangedWithHistoryOnOnEnable: 0
   _oldValue:
-    _list: []
-    _order: 0
+    _list:
+    - 
+    - 
+    _order: 1
   _initialValue:
-    _list: []
-    _order: 0
+    _list:
+    - 
+    - 
+    _order: 1
   _preChangeTransformers: []
-  _initializable: 0
-  _dqweq: 
+  _clearOnEnable: 0

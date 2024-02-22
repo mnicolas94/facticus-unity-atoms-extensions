@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
 using UnityEngine;
 
 namespace UnityAtomsExtensions.ResourceMediator
@@ -32,6 +34,18 @@ namespace UnityAtomsExtensions.ResourceMediator
                     return _list[_list.Count - 1];
             }
         }
+        
+        public bool TryGetCurrentValue(out T value)
+        {
+            if (HasValue())
+            {
+                value = GetCurrentValue();
+                return true;
+            }
+            
+            value = default;
+            return false;
+        }
 
         public void SetValue(T value)
         {
@@ -46,6 +60,15 @@ namespace UnityAtomsExtensions.ResourceMediator
         public void Clear()
         {
             _list.Clear();
+        }
+        
+        private async Task WaitForValue(T desiredValue, CancellationToken ct)
+        {
+            while ((!HasValue() || (HasValue() && !GetCurrentValue().Equals(desiredValue)))
+                   && !ct.IsCancellationRequested)
+            {
+                await Task.Yield();
+            }
         }
     }
     
