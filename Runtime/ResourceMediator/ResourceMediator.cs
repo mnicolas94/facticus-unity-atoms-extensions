@@ -62,7 +62,7 @@ namespace UnityAtomsExtensions.ResourceMediator
             _list.Clear();
         }
         
-        private async Task WaitForValue(T desiredValue, CancellationToken ct)
+        public async Task WaitForValue(T desiredValue, CancellationToken ct)
         {
             while ((!HasValue() || (HasValue() && !GetCurrentValue().Equals(desiredValue)))
                    && !ct.IsCancellationRequested)
