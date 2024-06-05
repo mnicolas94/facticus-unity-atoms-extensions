@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using System;
+using TMPro;
 using UnityAtoms;
 using UnityEngine;
 
@@ -15,6 +16,7 @@ namespace UnityAtomsExtensions.UI
         [SerializeField] private TextMeshProUGUI _text;
         [SerializeField] private string _prefix;
         [SerializeField] private string _suffix;
+        [SerializeField] private string _format;
 
         private void OnEnable()
         {
@@ -26,21 +28,43 @@ namespace UnityAtomsExtensions.UI
         {
             _variable.Changed.Unregister(UpdateUi);
         }
-
+        
+        [ContextMenu(nameof(UpdateUi))]
         public void UpdateUi()
         {
-            SetText(GetVariableText());
+            var formattedText = GetVariableText();
+            SetText(formattedText);
         }
 
-        protected virtual string GetVariableText()
+        private string GetVariableText()
         {
-            return _variable.Value.ToString();
+            return Format(_variable.Value);
         }
 
-        protected void SetText(string variableText)
+        private void SetText(string variableText)
         {
-            _text.SetText($"{_prefix}{variableText}{_suffix}");
+            _text.SetText(variableText);
         }
 
+        private string Format(TT value)
+        {
+            string text;
+            if (!string.IsNullOrEmpty(_format))
+            {
+                text = string.Format(_format, value);
+            }
+            else
+            {
+                text = value.ToString();
+            }
+            return $"{_prefix}{text}{_suffix}";
+        }
+
+#if UNITY_EDITOR
+        private void OnValidate()
+        {
+            UpdateUi();
+        }
+#endif
     }
 }
